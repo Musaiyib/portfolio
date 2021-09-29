@@ -1,0 +1,29 @@
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .projectsContainer{
+        width: 70%;
+        display: flex;
+        padding: 10px;
+        min-height: 75vh;
+        background-color: #5eb903;
+        border-radius: 10px;
+        text-align: center;
+
+
+        .allProjects{
+            display: flex;
+            justify-content: center;
+
+
+            .project{
+                width: 150px;
+                height: 140px;
+                border-radius: 10px;
+                background-color: #83e621;
+            }
+        }
+    }
+}

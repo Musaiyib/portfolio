@@ -1,0 +1,83 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contactWrapper{
+        width: 70%;
+        display: flex;
+        padding: 10px;
+        min-height: 75vh;
+        background-color: rgb(94, 185, 3);
+        border-radius: 10px;
+
+        .contactLeft{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: .4;
+            width: 40%;
+            height: 100%;
+            color: rgb(255, 255, 255);
+
+            .contactLeftText{
+                text-align: center;
+                
+                h2{
+                    font-size: 30px;
+                    margin-top: 10px;
+                }
+                p{
+                    margin-top: 10px;
+                }
+            }
+        }
+        .contactRight{
+            flex: .6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            height: 100%;
+            
+            #form{
+                text-align: center;
+                color: white;
+
+                h2{
+                    font-size: 30px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                }
+
+                input{
+                    height: 45px;
+                }
+
+                .input{
+                    width: 95%;
+                    color: green;
+                    border-radius: 7px;
+                    border: none;
+                    font-size: 20px;
+                    padding: 2px 5px;
+                    
+                }
+                #submit-btn{
+                    width: 150px;
+                    height: 45px;
+                    border: none;
+                    border-radius: 7px;
+                    color: green;
+                    &:hover{
+                        background-color: rgb(52, 102, 2);
+                        color: rgb(255, 255, 255);
+                        padding: 2px 5px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.appbar{
+    // background-color: rgb(140, 207, 131);
+    background-image: linear-gradient(to bottom right, green, lightgreen);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    
+
+    transition: all 1s ease;
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        padding: 18px 30px;
+        justify-content: space-between;
+        .left{
+            display: flex;
+            .sesLogo{
+                margin-right: 60px;
+                margin-top: 4px;
+            }
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+
+                .icon{
+                    margin-right: 5px;
+                    color: white;
+                    transition: all 2s ease;
+                }
+
+                .navSpan{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: white;
+                    transition: all 2s ease;
+                }
+            }
+        }
+        .right{
+            .hamburger {
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                span{
+                    width: 100%;
+                    height: 3px;
+                    background-color: rgb(4, 112, 4);
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+
+    &.active{
+        background-image: linear-gradient(to bottom right, lightgreen, green);
+        color: rgb(255, 255, 255);
+
+        .wrapper{
+            .left{
+                .itemContainer{
+                    .icon{
+                        transition: all 2s ease;
+                        color: rgb(255, 255, 255);
+                    }
+                    .navSpan{
+                        transition: all 2s ease;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+
+        .hamburger{
+            span{
+                &:first-child{
+                    background-color: rgb(252, 252, 252);
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: rgb(252, 252, 252);
+                    transform: rotate(-45deg);
+
+                }
+            }
+        }
+        
+    }
+}
